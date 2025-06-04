@@ -1,27 +1,12 @@
-# Resumo do que aprendi no lab – Criando máquina virtual no Azure
+## Configurando uma instância de Banco de Dados na Azure
 
-Neste lab, avancei no entendimento da plataforma Azure com foco em dois temas fundamentais: **SLA (Service Level Agreement)** e a criação de **máquinas virtuais**. Abaixo estão os principais aprendizados:
+O lab introduziu conceitos fundamentais de computação em nuvem com foco na plataforma **Microsoft Azure**. Os principais pontos abordados foram:
 
-##  Entendimento sobre o SLA (Service Level Agreement)
-- Compreendi que o SLA representa o compromisso da Microsoft com a **disponibilidade mínima garantida** de um serviço.
-- Aprendi que **combinar recursos** (como múltiplas instâncias e zonas de disponibilidade) pode **aumentar o SLA**, garantindo mais confiabilidade para aplicações em produção.
-- Também entendi que, para garantir o SLA informado, é preciso seguir **boas práticas de arquitetura** e usar os recursos conforme documentado.
+- **Provisionamento de banco de dados na nuvem**: Foi demonstrado como criar e utilizar um banco de dados diretamente na nuvem utilizando os recursos do Azure, sem necessidade de instalação ou configuração local. O serviço é gerenciado pela Microsoft, com alta disponibilidade, escalabilidade e backups automatizados.
 
-##  Acesso à tela de criação de máquina virtual
-- Naveguei até a tela de **criação de uma máquina virtual** no portal do Azure.
-- Explorei as opções do painel, incluindo:
-  - Grupo de recursos
-  - Região
-  - Tipo de imagem (sistema operacional)
-  - Tamanho da máquina (CPU, RAM)
-  - Nome da VM, autenticação (senha ou chave SSH)
-- Aprendi que é possível **clicar nos ícones de informação** ao lado dos campos para entender o que cada um faz antes de preencher.
+- **Execução de serviços diretamente na nuvem**: A aula apresentou a possibilidade de executar aplicações diretamente em máquinas virtuais ou serviços de plataforma (como Azure App Service), eliminando a necessidade de instalação e manutenção local. Os serviços são executados em data centers da Microsoft.
 
-##  Configurações que impactam o custo
-- Fui alertado sobre como **determinadas configurações podem aumentar os custos** da infraestrutura:
-  - Escolher tamanhos de máquina maiores ou com muitos recursos
-  - Adicionar discos premium ou SSDs desnecessários
-  - Usar regiões com preços mais altos
-  - Manter máquinas ligadas sem necessidade
-- Entendi a importância de **planejar bem os recursos** para evitar surpresas na fatura.
+- **Acesso remoto aos recursos**: Todos os recursos provisionados na nuvem podem ser acessados remotamente via portal do Azure ou interfaces de conexão (como SQL Server Management Studio, VS Code, etc.), o que permite gerenciar ambientes de qualquer local com acesso à internet.
+
+- **Uso otimizado de recursos locais**: Como as cargas de trabalho são executadas na infraestrutura do Azure, há economia de recursos computacionais locais. Isso reduz a dependência de máquinas potentes no lado do cliente.
 
